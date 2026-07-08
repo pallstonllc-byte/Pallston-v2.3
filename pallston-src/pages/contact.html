@@ -1,0 +1,105 @@
+<section class="page-hero page-hero--split">
+  <div class="container page-hero__grid">
+    <div class="page-hero__content">
+      <h1>Bring clarity to what matters next<span class="brand-glyph" aria-hidden="true"></span></h1>
+      <p class="lede">Whether you're exploring a new initiative, modernizing critical systems, or navigating a decision with real consequences, we'd welcome the opportunity to start the conversation.</p>
+    </div>
+    <div class="page-hero__field" aria-hidden="true">
+      __FIELD:contact__
+    </div>
+  </div>
+</section>
+
+<section class="section section--rule">
+  <div class="container">
+    <div class="form-layout">
+
+      <div class="form-aside" data-rv>
+        <h2>What to expect</h2>
+        <p>No pitch deck. Just a conversation about what you're working through, and an honest read on whether we're the right fit.</p>
+
+        <dl class="form-aside__list">
+          <div class="form-aside__item">
+            <dt>Response time</dt>
+            <dd>We typically reply within one business day.</dd>
+          </div>
+          <div class="form-aside__item">
+            <dt>Prefer email directly</dt>
+            <dd><a class="text-link" href="mailto:contact@pallston.com">contact@pallston.com</a></dd>
+          </div>
+          <div class="form-aside__item">
+            <dt>Not sure where to start</dt>
+            <dd>That's alright. Tell us what's on your mind and we'll help you figure out the right next step.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div data-rv>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form" data-netlify-form aria-label="Contact form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="sr-only">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="field__error">Please share your name.</span>
+            </div>
+            <div class="field">
+              <label for="organization">Organization <span class="opt">(optional)</span></label>
+              <input type="text" id="organization" name="organization" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="field__error">Please share a valid email.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="opt">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">What would you like to discuss? <span class="opt">(optional)</span></label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <fieldset class="field field--group">
+            <legend>Preferred way to connect <span class="opt">(optional)</span></legend>
+            <div class="choice-group">
+              <label class="choice">
+                <input type="radio" name="preferred_contact" value="Email">
+                <span>Email</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="preferred_contact" value="Phone">
+                <span>Phone</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="preferred_contact" value="Either">
+                <span>Either is fine</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-submit">
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <span class="form-note">We never share your information.</span>
+          </div>
+        </form>
+
+        <div class="form-success" data-form-success role="status">
+          <h3>Message sent<span class="brand-glyph" aria-hidden="true"></span></h3>
+          <p>Thank you for reaching out. We typically reply within one business day. If it's urgent, email us directly at <a class="text-link" href="mailto:contact@pallston.com">contact@pallston.com</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

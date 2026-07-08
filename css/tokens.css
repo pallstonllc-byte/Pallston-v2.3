@@ -1,0 +1,119 @@
+/* =========================================================
+   PALLSTON DESIGN TOKENS — v3.1
+   Four colors. Two themes built from the same four.
+
+   Charcoal    #23272F   ink in the light, canvas in the dark
+   Ash         #6C7480   the working gray: lines, secondary voice
+   White Smoke #F7F8F9   canvas in the light, ink in the dark
+   Emerald     #0FAE65   rare. the point of clarity (~5–8%)
+
+   Derived values are same-hue mixes of the four, chosen for
+   WCAG contrast on their intended surface:
+     --ink-soft   7.5:1 on smoke / 8.7:1 on charcoal
+     --ink-mute   large text and labels only
+   ========================================================= */
+
+:root {
+  /* ---- palette ---- */
+  --charcoal: #23272F;
+  --ash: #6C7480;
+  --smoke: #F7F8F9;
+  --emerald: #0FAE65;
+
+  /* ---- roles (light) ---- */
+  --canvas: var(--smoke);
+  --ink: var(--charcoal);
+  --ink-soft: #4B515C;                       /* charcoal 45 / ash 55 */
+  --ink-mute: var(--ash);                    /* ≥1.2rem or decorative */
+  --paper: var(--smoke);                     /* text on ink surfaces  */
+  --paper-soft: #C2C6CB;                     /* smoke 62 / ash 38     */
+
+  --btn-hover: #30353E;                      /* charcoal, lifted      */
+  --menu-active: rgba(108, 116, 128, 0.12);  /* soft neutral emphasis */
+  --selection: rgba(108, 116, 128, 0.18);
+
+  --hairline: rgba(35, 39, 47, 0.14);
+  --hairline-soft: rgba(35, 39, 47, 0.09);
+  --hairline-strong: rgba(35, 39, 47, 0.32);
+  --hairline-inverse: rgba(247, 248, 249, 0.16);
+
+  --field-line: rgba(108, 116, 128, 0.62);   /* ash, embossing-quiet */
+  --field-line-faint: rgba(108, 116, 128, 0.38);
+  --field-datum: rgba(108, 116, 128, 0.27);
+  --emerald-wash: rgba(15, 174, 101, 0.09);  /* selected-state tint  */
+
+  /* ---- type ---- */
+  --font-display: 'Sora', -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: 'Public Sans', -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  --text-hero: clamp(2.4rem, 4.4vw, 3.65rem);
+  --text-h1: clamp(2.1rem, 3.6vw, 3.1rem);
+  --text-h2: clamp(1.65rem, 2.5vw, 2.25rem);
+  --text-h3: clamp(1.2rem, 1.5vw, 1.4rem);
+  --text-lede: clamp(1.1rem, 1.35vw, 1.22rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.9375rem;
+  --text-caption: 0.8125rem;
+  --text-kicker: 0.8rem;
+
+  --leading-tight: 1.12;
+  --leading-heading: 1.2;
+  --leading-body: 1.68;
+
+  /* ---- space ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  --section-pad: clamp(2.5rem, 4.5vw, 4rem);
+  --hero-pad-top: clamp(6rem, 10vh, 7.5rem);
+
+  /* ---- layout ---- */
+  --container-max: 1200px;
+  --container-pad: clamp(1.5rem, 5vw, 3.5rem);
+  --measure: 62ch;
+  --radius: 2px;
+
+  /* ---- motion: slow, elegant, breathing ---- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.21, 1);
+  --ease-draw: cubic-bezier(0.4, 0.05, 0.2, 1);
+  --dur-fast: 180ms;
+  --dur-base: 420ms;
+  --dur-slow: 900ms;
+  --dur-draw: 2400ms;
+}
+
+/* ---------------------------------------------------------
+   Dark theme — the same four colors, inverted with intent.
+   Charcoal becomes the canvas; smoke becomes the ink; ash
+   keeps the secondary voice; emerald stays rare.
+   --------------------------------------------------------- */
+[data-theme='dark'] {
+  --canvas: var(--charcoal);
+  --ink: var(--smoke);
+  --ink-soft: #C2C6CB;                       /* 8.7:1 on charcoal */
+  --ink-mute: #9BA1AA;                       /* ash, lifted — large only */
+  --paper: var(--charcoal);                  /* text on smoke surfaces */
+  --paper-soft: #C2C6CB;
+
+  --btn-hover: #E2E4E7;                      /* smoke, settled */
+  --menu-active: rgba(108, 116, 128, 0.24);
+  --selection: rgba(108, 116, 128, 0.4);
+
+  --hairline: rgba(247, 248, 249, 0.13);
+  --hairline-soft: rgba(247, 248, 249, 0.08);
+  --hairline-strong: rgba(247, 248, 249, 0.34);
+  --hairline-inverse: rgba(247, 248, 249, 0.16);
+
+  --field-line: rgba(154, 161, 170, 0.55);
+  --field-line-faint: rgba(154, 161, 170, 0.33);
+  --field-datum: rgba(154, 161, 170, 0.24);
+  --emerald-wash: rgba(15, 174, 101, 0.14);
+}

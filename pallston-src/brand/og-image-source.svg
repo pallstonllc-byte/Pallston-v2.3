@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F7F8F9"/>
+
+  <!-- Decision Field: uncertainty converges on one decision;
+       a confident path continues beyond it -->
+  <g stroke="#6C7480" stroke-width="1" fill="none" opacity="0.42">
+    <path d="M 640,141 C 720,141 800,280 876,313"/>
+    <path d="M 640,213 C 720,213 800,295 876,314"/>
+    <path d="M 640,258 C 720,258 800,303 876,314"/>
+    <path d="M 640,372 C 720,372 800,327 876,316"/>
+    <path d="M 640,417 C 720,417 800,335 876,316"/>
+    <path d="M 640,489 C 720,489 800,350 876,317"/>
+  </g>
+  <path d="M 880,315 L 1240,315" stroke="#0FAE65" stroke-width="1.4" fill="none" opacity="0.9"/>
+  <rect x="873" y="308" width="14" height="14" fill="#0FAE65"/>
+
+  <!-- brand mark -->
+  <g transform="translate(96,120) scale(0.52)">
+    <path d="M0,14 L77,14 A49,49 0 0 1 77,112 L56,112" fill="none" stroke="#23272F" stroke-width="28" stroke-linecap="butt" stroke-linejoin="miter"></path>
+    <rect x="0" y="56" width="28" height="84" fill="#23272F"></rect>
+    <rect x="0" y="168" width="28" height="28" fill="#0FAE65"></rect>
+  </g>
+  <text x="172" y="200" font-family="Sora, Helvetica, Arial, sans-serif" font-weight="600" font-size="40" fill="#23272F">Pallston</text>
+
+  <text x="96" y="360" font-family="Sora, Helvetica, Arial, sans-serif" font-weight="700" font-size="56" fill="#23272F" letter-spacing="-0.5">Confidence Begins</text>
+  <text x="96" y="428" font-family="Sora, Helvetica, Arial, sans-serif" font-weight="700" font-size="56" fill="#23272F" letter-spacing="-0.5">with Clarity</text>
+  <!-- the brand glyph, raised to cap height -->
+  <rect x="453" y="392" width="12" height="12" fill="#0FAE65"/>
+  <text x="96" y="492" font-family="Sora, Helvetica, Arial, sans-serif" font-size="20" fill="#4B515C">Modern advisory. Disciplined execution. Lasting transformation.</text>
+</svg>

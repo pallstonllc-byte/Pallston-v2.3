@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "careone",
+    "name": "CareOne",
+    "sector": "Healthcare",
+    "status": "Concept",
+    "tagline": "An AI operating layer for healthcare administration.",
+    "summary": "CareOne connects providers, payers, and reimbursement systems through a shared AI intelligence layer — automating eligibility, prior authorization, claim validation, denials, appeals, and payment across one explainable pipeline.",
+    "body": [
+      "Healthcare administration is fragmented across disconnected EHRs, payer portals, clearinghouses, and manual work. CareOne addresses that fragmentation directly, operating as a single intelligence layer that spans the systems that were never designed to talk to one another.",
+      "The platform works through six coordinated stages — Verify, Authorize, Document, Validate, Protect, and Resolve — each passing explainable context to the next, so every decision can be traced and defended.",
+      "CareOne leverages Claude as its reasoning engine to read and interpret physician notes, payer policies, medical necessity criteria, contracts, and claim histories — powering specialized AI agents that do the work, rather than functioning as a chatbot.",
+      "The outcome is administrative throughput without the loss of accountability: faster eligibility and authorization, fewer denials, cleaner claims, and a documented rationale at every step."
+    ],
+    "stages": ["Verify", "Authorize", "Document", "Validate", "Protect", "Resolve"],
+    "video": null
+  },
+  {
+    "slug": "execboard",
+    "name": "ExecBoard",
+    "sector": "Executive & Strategy",
+    "status": "Concept",
+    "tagline": "An AI operating layer for executive decision-making.",
+    "summary": "ExecBoard gives leadership teams one defensible view of the decisions in front of them — connecting financials, operations, risk, and strategy through a shared intelligence layer that turns scattered reporting into board-ready judgment.",
+    "body": [
+      "Every board cycle repeats the same scramble: reconciling decks, chasing owners, and re-deriving the same numbers under deadline. ExecBoard replaces that scramble with a single, continuously-maintained view of the organization's position.",
+      "The platform works through six coordinated stages — Gather, Reconcile, Frame, Model, Recommend, and Track — each passing explainable context to the next, so a recommendation always arrives with the reasoning and the alternatives beside it.",
+      "ExecBoard reads financial statements, operating metrics, contracts, and prior board minutes to brief executives with options and rationale rather than dashboards — powering specialized agents that prepare, pressure-test, and then follow each decision through to its outcome.",
+      "The outcome is a leadership team that spends its time deciding rather than assembling: less preparation, sharper options, and a clear record of why each call was made."
+    ],
+    "stages": ["Gather", "Reconcile", "Frame", "Model", "Recommend", "Track"],
+    "video": null
+  },
+  {
+    "slug": "geoshield",
+    "name": "GeoShield",
+    "sector": "Critical Infrastructure",
+    "status": "Concept",
+    "tagline": "An AI operating layer for infrastructure resilience.",
+    "summary": "GeoShield gives operators of critical infrastructure a live, geospatial picture of risk — connecting sensor networks, asset registries, weather, and field reporting through a shared intelligence layer that turns raw signals into coordinated response.",
+    "body": [
+      "Critical infrastructure fails in the gaps between systems that were never designed to talk: SCADA, GIS, maintenance records, and emergency channels each hold part of the picture, and no one holds all of it. GeoShield assembles that picture in one place, continuously.",
+      "The platform works through six coordinated stages — Map, Monitor, Detect, Assess, Coordinate, and Restore — each passing explainable context to the next, so an alert always arrives with its location, its severity, and the action it calls for.",
+      "GeoShield interprets telemetry, inspection notes, and hazard models to anticipate failures and brief responders with prioritized, explainable actions — powering specialized agents rather than functioning as one more alerting dashboard.",
+      "The outcome is resilience that is operational rather than theoretical: failures seen earlier, responses coordinated faster, and a defensible record of every decision made under pressure."
+    ],
+    "stages": ["Map", "Monitor", "Detect", "Assess", "Coordinate", "Restore"],
+    "video": null
+  }
+]
