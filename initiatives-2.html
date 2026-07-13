@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiatives - Pallston</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #FAFBFC;
+            color: #17191F;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #17191F;
+            color: #F7F8F9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .nav-menu {
+            background: #F7F8F9;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            padding: 0 20px;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #17191F;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background: #0FA18E;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .nav-menu a:hover {
+            color: #0FA18E;
+        }
+
+        .nav-menu a.active {
+            color: #0FA18E;
+        }
+
+        .nav-menu a.active::after {
+            transform: scaleX(1);
+        }
+
+        .projects-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 80px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(23, 25, 31, 0.08);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            scroll-margin-top: 100px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project-section:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .project-header {
+            background: #17191F;
+            color: #F7F8F9;
+            padding: 40px 30px;
+            border-bottom: 1px solid rgba(15, 161, 142, 0.15);
+        }
+
+        .project-header h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .project-header p {
+            opacity: 0.85;
+            font-size: 1.05em;
+        }
+
+        .project-iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .nav-menu ul {
+                gap: 15px;
+                padding: 10px 0;
+            }
+
+            .project-header {
+                padding: 30px 20px;
+            }
+
+            .project-header h2 {
+                font-size: 1.5em;
+            }
+
+            .project-iframe {
+                height: 600px;
+            }
+
+            .project-section {
+                margin-bottom: 60px;
+            }
+        }
+
+        footer {
+            background: #17191F;
+            color: #F7F8F9;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 1px solid rgba(15, 161, 142, 0.15);
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Initiatives</h1>
+        <p>Explore our strategic projects and concepts</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#careoneconcept">CareOne</a></li>
+            <li><a href="#execboardconcept">ExecBoard</a></li>
+            <li><a href="#geoshieldconcept">GeoShield</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Container -->
+    <div class="projects-container">
+        <!-- CareOne Project -->
+        <section id="careoneconcept" class="project-section">
+            <div class="project-header">
+                <h2>CareOne Concept</h2>
+                <p>A comprehensive care management initiative</p>
+            </div>
+            <iframe src="/projects/CareOne_dc.html" class="project-iframe"></iframe>
+        </section>
+
+        <!-- ExecBoard Project -->
+        <section id="execboardconcept" class="project-section">
+            <div class="project-header">
+                <h2>ExecBoard Concept</h2>
+                <p>Executive management and governance platform</p>
+            </div>
+            <iframe src="/projects/ExecBoard_dc.html" class="project-iframe"></iframe>
+        </section>
+
+        <!-- GeoShield Project -->
+        <section id="geoshieldconcept" class="project-section">
+            <div class="project-header">
+                <h2>GeoShield Concept</h2>
+                <p>Geospatial security and monitoring solution</p>
+            </div>
+            <iframe src="/projects/GeoShield_dc.html" class="project-iframe"></iframe>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pallston. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Highlight active nav link based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
