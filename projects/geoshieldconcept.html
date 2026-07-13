@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoShield Concept - Pallston Initiatives</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAFBFC; }
+        
+        .back-nav {
+            background: white;
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(23, 25, 31, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #0FA18E;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            max-width: fit-content;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        .back-link::before {
+            content: "←";
+            font-size: 1.2em;
+        }
+
+        .project-container {
+            width: 100%;
+        }
+
+        .project-container iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="back-nav">
+        <a href="/initiatives#geoshieldconcept" class="back-link">Back to Initiatives</a>
+    </nav>
+    
+    <div class="project-container">
+        <iframe src="/projects/GeoShield_dc.html"></iframe>
+    </div>
+</body>
+</html>
